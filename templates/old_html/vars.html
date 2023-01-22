@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title> Home </title>
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/template.css') }}">
+   </head>
+   
+   <body>
+      <header>
+         <div class="container">
+            <h1 class="logo">NetworX Tool Automation</h1>
+            <strong>
+               <nav>
+                  <ul class="menu">
+                     <li><a href="{{ url_for('home') }}">Home</a></li>
+                     <li><a href="{{ url_for('about') }}">About</a></li>
+                  </ul>
+               </nav>
+            </strong>
+         </div>
+      </header>
+	    <b> NetworX Tool is using Flask Framework </b>
+		<p> It's written in Python ver 2.7 </p>
+		<p> This tool is to help network engineer to spend much longer time with Family </p>
+		<p> Let the machine works for you </p>
+		<br>
+		<b> Testing the variables </b>
+		<p> 1.Simple Variable </p>
+		<p> *Developed by, var > {{ user.username }}</p>
+		<p> *var > {{ comment2.content2 }}</p>
+		<p>*********</p>
+		
+		<p> 2.Dictionary Variable </p>
+		{% for comment in comments %}
+        <div>
+			<p>*{{ comment.learning.subject }} description: <b>{{ comment.content }}</b>
+			</p>
+		</div>
+        {% endfor %}	  
+		<p>*********</p>
+		
+		<p> 3.Show Variable input and Value </p>
+		<b> How old are you ?<b>
+		<form method="POST" action="/send">
+			<div class="form-group">
+				<input ="test" name="age">
+			</div>
+			<input class="btn btn-primary" type="submit" value="submit">
+		</form>	
+		<p>*********</p>
+		
+		<p> 4.Load CSV and Print </p>
+		<form class="" action="/data_csv" method="POST">
+			<input type="file" name="csvfile" value="">
+			<input type="submit" name="" value="submit">
+		</form>	
+		<p>*********</p>
+		
+		<p> 5.Dropdown List </p>
+	
+		<p>*********</p>
+
+		<p> 6.Radio Button </p>
+	
+		<p>*********</p>
+	
+		<p> 7.Checkbox </p>
+		<form action="/data_checkbox" method="POST">
+			West <input type="checkbox" value="1" name="mycheckbox">
+			East <input type="checkbox" value="2" name="mycheckbox">
+			North <input type="checkbox" value="3" name="mycheckbox">
+		<input type="submit" value="submit">
+		</form>
+		<p>*********</p>
+	
+   </body>
+</html>

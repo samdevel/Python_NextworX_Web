@@ -1,0 +1,23 @@
+Global values:
+  Internet Protocol routing is enabled
+FastEthernet1/0 is up, line protocol is up
+  Internet address is 10.1.1.1/24
+FastEthernet1/1 is up, line protocol is up
+  Internet address is 10.1.2.1/24
+FastEthernet1/2 is up, line protocol is down
+FastEthernet1/3 is up, line protocol is down
+FastEthernet1/4 is up, line protocol is down
+FastEthernet1/5 is up, line protocol is down
+FastEthernet1/6 is up, line protocol is down
+FastEthernet1/7 is up, line protocol is down
+FastEthernet1/8 is up, line protocol is down
+FastEthernet1/9 is up, line protocol is down
+FastEthernet1/10 is up, line protocol is down
+FastEthernet1/11 is up, line protocol is down
+FastEthernet1/12 is up, line protocol is down
+FastEthernet1/13 is up, line protocol is down
+FastEthernet1/14 is up, line protocol is down
+FastEthernet1/15 is up, line protocol is down
+Vlan1 is administratively down, line protocol is down
+Vlan10 is up, line protocol is down
+  Internet address is 10.10.10.10/24

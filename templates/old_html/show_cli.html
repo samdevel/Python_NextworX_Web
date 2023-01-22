@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+
+<head>
+ <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS_for_Textbox.css') }}">
+</head>
+ <body>
+    <div class="wrapper">
+
+       <div class="header">
+          <h2>Executing the command - CLI</h2>
+       </div>
+
+       <div class="body">
+       <br>
+
+       <right><a href="{{ url_for('home')}}"> <p>Return to Menu Page</p> </a></right>
+       <br>
+          <div class="border">
+ 
+             <left><h3>Showing Command "{{ web_show_cli }}" </h3></center><br> 
+             <pre> {{ web_print }} </pre>
+             <p>&nbsp;</p>
+             <h3>Thank you...</h3>
+             <br>
+          </div>
+       </div>
+
+       <div class="footer">
+          <marquee scrollamount="2" behavior="alternate"> <h2>NetworX Tool</h2></marquee>
+       </div>
+
+    </div>
+      
+  </body>
+</html>

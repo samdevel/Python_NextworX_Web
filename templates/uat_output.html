@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>UAT - Output</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+
+  <!-- Custom styles for this template --> 
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/simple-sidebar.css') }}">
+
+
+
+   <!-- Custom styles for this template -->
+   <!--
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/simple-sidebar.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/CSS_for_Textbox.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/simple-sidebar.css') }}">
+   -->
+
+</head>
+
+<body>
+
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading"> NetworX Tool </div>
+      <div class="list-group list-group-flush">
+        <a href="{{ url_for('uat') }}" class="list-group-item list-group-item-action bg-light">UAT</a>
+        <a href="{{ url_for('custom') }}" class="list-group-item list-group-item-action bg-light">Custom</a>
+        <a href="{{ url_for('filedir') }}" class="list-group-item list-group-item-action bg-light">File&Directory</a>
+        <a href="{{ url_for('monitoring') }}" class="list-group-item list-group-item-action bg-light">Monitoring</a>
+        <a href="{{ url_for('about') }}" class="list-group-item list-group-item-action bg-light">About</a>
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+       
+      </nav>
+
+      <div class="container-fluid">
+        
+         <h1 class="mt-4">UAT Output</h1>
+         <br>
+	 <p>Showing the configuration output</p>
+        <p></p>
+	   
+       <br>
+          <div class="border">
+ 
+             <left><h3>Showing Command: "{{ web_read_file }}"</h3></center>
+	     <br> 
+             <pre> {{ web_print }} </pre>
+             <p>&nbsp;</p>
+             <h4>Task completed...</h4>
+             <br>
+
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{{ url_for('static', filename='jquery/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+
+</body>
+
+</html>
