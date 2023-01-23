@@ -13,7 +13,7 @@ app = Flask(__name__)
 
 #################################################################################################
 # Arch/Developer: sm@Devel                                                                      #
-# This software release mainly for education and You may distribute and develop it              #
+# This software released mainly for education and You may distribute and develop it             #
 # Activities other than copying, distribution and modification are not covered by this License  #
 # You may accept at your own risks for using this app                                           #
 #################################################################################################
