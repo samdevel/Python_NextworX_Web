@@ -5,7 +5,7 @@
 * Arch/Developer: sm@Devel
 * This software released mainly for education, You may distribute and you may develop it for your own purpose
 * Activities other than copying, distribution and modification are not covered by this License
-* You may accept at your own risks for using this app
+* You may accept at your own risks of using this app
 * Good day to you and happy coding
  
  
